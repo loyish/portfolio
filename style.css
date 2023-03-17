@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Homepage*/
+.lcc{
+    height:  100vh;
+    width: 100%;
+    background-image: url(home.png);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    background-color: black ;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: relative;
+    top: 0; 
+    
+}
+nav img{
+    height: 2%;
+    width: 4%;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 0;
+
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: gray;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+  
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all .5s ease;
+    padding: 8px 15px;
+}
+nav ul li a:hover{
+    color: gray;
+    transition: .4s; 
+    box-shadow: 0 0 10px;
+}
+.content{
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: black;
+    margin: 20px 0px 20px;
+    font-size: 50px;
+}
+h3{
+    color: black;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+h4{
+     color: black;
+     letter-spacing: 2px;
+     font-size: 20px;
+}
+.photo{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+.photo img{
+    padding-left:800px;
+    padding-top: 60px;
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 170px;
+    --s: 5px;  /* size of the frame */
+    --b: 3px;   /* border thickness */
+    --w: 350px; /* width of the image */
+    --c: #676363;
+    
+    width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+      linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+      linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+}
+.photo img:hover{
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+}
+/*About*/
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: black;
+}
+.about img{
+    height: 330px;
+    width: 250px;
+    border-radius: 30px;
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+      left   var(--_i,0%) top    var(--_g),
+      bottom var(--_i,0%) left   var(--_g),
+      top    var(--_i,0%) right  var(--_g),
+      right  var(--_i,0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    /*filter: grayscale();*/
+    transition: .3s linear;
+    cursor: pointer;
+}
+.about img:hover {
+    --_i: 10%;
+    /*filter: grayscale(0);*/
+  }
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: whitesmoke; 
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize  ;
+}
+.about-text p{
+    color: whitesmoke;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size:  18px;
+    margin-bottom: 45px;
+}
+.about-text a{
+    background-color: gray;
+    color: whitesmoke;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.about-text a:hover{
+    background-color: transparent;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+/*Project*/ 
+.project{
+    background: whitesmoke;
+    width: 100%;
+    padding: 50px 0px;  
+    position: relative; 
+   
+}
+.title h2{
+    color: black;
+    font-size: 65px;
+    width:auto;
+    margin: auto;
+    text-align: center;
+    position: relative; 
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 545px;
+    width: 435px;
+    padding: 20px 35px;
+    background: gray;
+    border-radius: 10px;
+    margin: 15px;
+    /*position: relative;*/ 
+    overflow: hidden;
+    text-align: center;
+    
+}
+.card img{
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    display: inline-block;
+    background-size: contain;
+}
+.card img:hover {
+  box-shadow:  16px 16px 8px black,
+                 20px 20px 4px black; 
+}
+.card i{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin: 15px 0px;
+    color: rgb(247, 31, 31) ;
+}
+h5{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+.wew p{
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+/*Contact*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color:black;
+}
+#contact h1{
+    text-align: center;
+    color: white;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.put{
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+
+}
+.input{
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    outline: none;
+}
+.message {
+    width: 40%;
+    padding: 10px;
+    margin: 13px;
+    border-radius: 10px;
+    outline: none;
+}
+.btn{
+    width: 15%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: gray;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px gray;
+    background-color: white;
+}
+/*Footer*/
+#footer{
+    background-color: black;
+    padding: 15px;
+    height: 30%;
+}
+.footer h5{
+    background-color: #000;
+    text-align: center;
+    font-size: 15px;   
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }

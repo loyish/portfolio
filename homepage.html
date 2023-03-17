@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Website</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2family=Josefin+Sans:ital,wght!0,100;0,200;0,300;
+    0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script src="homepage.js"></script>
+
+  </head>
+  <body>
+    
+    <!--lc Session Start-->
+    
+      <nav>
+        <img src="C.png">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Projects</a></li> 
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    
+      <div class="lcc" id="home">
+        <div class="content">
+          <h4>Hello, My name is </h4>
+          <h1>Louise Claire <span>Clavaton</span></h1>
+          <h3>I am a Front-End Developer/Tennis Player</h3>
+        </div>
+        <div class="photo">
+          <img src="picture.jpg">
+        </div>
+      </div>
+   
+    <!--About-->
+    
+      <div class="about" id="about">
+        <div class="main">
+          <img src="id.jpg">
+          <img src="tennis.jpg">
+          <div class="about-text">
+            <h2>About Me!</h2>
+            <h5>Developer <span>& An Athlete</span></h5>
+            <p>I am a front-end web and mobile developer. I can provide you with 
+              a clean code and also I can make the website responsive and accessible 
+              to all users. I can also teach you how to play Tennis.
+            </p>   
+            <a href="#contact">Let's Talk?</a>
+          </div>
+        </div>
+      </div>
+   
+    <!--Projects-->
+   
+      <div class="project" id="project">
+        <div class="title">
+          <h2>My Projects</h2>
+        </div>
+        <div class="box">
+
+          <div class="card">
+            <i class="fa-regular fa-building"></i>
+            <h5>Program Recommendation System</h5>
+            <div class="wew">
+              <img src="capstone.png">
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fa-sharp fa-solid fa-shop"></i>
+            <h5>San Beda Online Store</h5>
+            <div class="wew">
+              <img src="store.png">
+            </div>
+          </div>
+
+        </div>
+      </div>
+ 
+
+    <!--Contact-->
+    <section id="contact">
+      <h1>Contact Me!</h1>
+      <form action="" class="form-contact">
+        <div class="put">
+          <input type="text" name="name" id="name" class="input" placeholder="Enter your Name:">
+        </div>
+        <div class="put">
+          <input type="email" name="email" id="email" class="input" placeholder="Enter your Email:"> 
+        </div>
+        <div class="put">
+          <textarea name="message" class="message" id="message" cols="30" rows="10" placeholder="Enter your Message:"></textarea>
+        </div>
+        <input type="button" class="btn" value="SEND" id="send" onclick="sendMail()"> 
+        <!--<button class="btn btn primary" onclick="sendMail()">SEND</button>-->
+      </form>
+
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+     </script>
+    
+     <script type="text/javascript">
+      (function(){
+        emailjs.init("zU6VyWnnGcsMxYKLX");
+      })();
+     </script>
+
+    </section>
+
+    <!--Footer-->
+    <section id="footer">
+      <div class="footer">
+        <h5>Claire © All Rights Reserved 2023</h5>
+      </div>
+    </section>
+    
+  </body>
+</html>
