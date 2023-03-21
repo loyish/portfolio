@@ -18,7 +18,7 @@ html{
 }
 nav{
     display: flex;
-    width: 100vh;
+    width: 219vh;
     background-color: black ;
     align-items: center;
     justify-content: space-between;
@@ -72,10 +72,11 @@ nav ul li a:hover{
     box-shadow: 0 0 10px;
 }
 .lcc{
-    width: 100vh;
+    width: 219vh;
 }
 .content{
     position: absolute;
+    
     top: 60%;
     left: 8%;
     transform: translateY(-50%);
@@ -97,8 +98,8 @@ h4{
 }
 .photo{
     position: absolute;
-    top: 30%;
-    left: 60%;
+    top: 30vh;
+    left: 140vh;
 }
 .photo img{
     padding-left:800px;
@@ -131,7 +132,7 @@ h4{
 }
 /*About*/
 .about{
-    width: 100vh;
+    width: 219vh;
     padding: 100px 0px;
     background-color: black;
 }
@@ -204,7 +205,7 @@ h4{
 /*Project*/ 
 .project{
     background: whitesmoke;
-    width: 100vh;
+    width: 219vh;
     padding: 50px 0px;  
     position: relative; 
    
@@ -266,7 +267,7 @@ h5{
 }
 /*Contact*/
 #contact{
-    width: 100vh;
+    width: 219vh;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -322,7 +323,7 @@ h5{
     background-color: black;
     padding: 15px;
     height: 30%;
-    width: 100vh;
+    width: 219vh;
 }
 .footer h5{
     background-color: #000;
