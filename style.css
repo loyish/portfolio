@@ -75,7 +75,7 @@ nav ul li a{
     font-weight: bold;
     text-transform: capitalize;
     transition: all .5s ease;
-    padding: 8px 15px;
+    padding: 8px 25px;
 }
 nav ul li a:hover{
     color: white;
