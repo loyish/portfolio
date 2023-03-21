@@ -78,7 +78,7 @@ nav ul li a{
     padding: 8px 15px;
 }
 nav ul li a:hover{
-    color: gray;
+    color: white;
     transition: .4s; 
     box-shadow: 0 0 10px;
 }
