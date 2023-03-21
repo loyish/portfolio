@@ -3,6 +3,7 @@
     margin: 0;
     font-family: "Times New Roman", Times, serif;
     box-sizing: border-box;
+    
 }
 html{
     scroll-behavior: smooth;
@@ -17,6 +18,7 @@ html{
 }
 nav{
     display: flex;
+    width: 100vh;
     background-color: black ;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +53,7 @@ span{
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    padding: 10px 25px;
+    padding: 7px 15px;
   
 }
 nav ul li a{
@@ -68,6 +70,9 @@ nav ul li a:hover{
     color: gray;
     transition: .4s; 
     box-shadow: 0 0 10px;
+}
+.lcc{
+    width: 100vh;
 }
 .content{
     position: absolute;
@@ -126,7 +131,7 @@ h4{
 }
 /*About*/
 .about{
-    width: 100%;
+    width: 100vh;
     padding: 100px 0px;
     background-color: black;
 }
@@ -199,7 +204,7 @@ h4{
 /*Project*/ 
 .project{
     background: whitesmoke;
-    width: 100%;
+    width: 100vh;
     padding: 50px 0px;  
     position: relative; 
    
@@ -232,7 +237,7 @@ h4{
 }
 .card img{
     height: 400px;
-    width: 350px;
+    width: 250px;
     border-radius: 10px;
     display: inline-block;
     background-size: contain;
@@ -261,6 +266,7 @@ h5{
 }
 /*Contact*/
 #contact{
+    width: 100vh;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -316,6 +322,7 @@ h5{
     background-color: black;
     padding: 15px;
     height: 30%;
+    width: 100vh;
 }
 .footer h5{
     background-color: #000;
