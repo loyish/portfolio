@@ -18,7 +18,7 @@ html{
 }
 nav{
     display: flex;
-    width: 219vh;
+    width: 100%;
     background-color: black ;
     align-items: center;
     justify-content: space-between;
@@ -43,7 +43,6 @@ nav ul{
 }
 .logo{
     color: white;
-    font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
 }
@@ -53,12 +52,12 @@ span{
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    padding: 7px 15px;
+   
   
 }
 nav ul li a{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration-line: underline;
     text-decoration-style: wavy;
     font-weight: bold;
@@ -72,7 +71,7 @@ nav ul li a:hover{
     box-shadow: 0 0 10px;
 }
 .lcc{
-    width: 219vh;
+    width: 100%;
 }
 .content{
     position: absolute;
@@ -102,14 +101,12 @@ h4{
     left: 140vh;
 }
 .photo img{
-    padding-left:800px;
-    padding-top: 60px;
     background-size: cover;
     border: 2px solid black;
     border-radius: 170px;
     --s: 5px;  /* size of the frame */
     --b: 3px;   /* border thickness */
-    --w: 350px; /* width of the image */
+    --w: 300px; /* width of the image */
     --c: #676363;
     
     width: var(--w);
@@ -132,13 +129,13 @@ h4{
 }
 /*About*/
 .about{
-    width: 219vh;
-    padding: 100px 0px;
+    width: 100%;
+    padding: 150px 0px;
     background-color: black;
 }
 .about img{
-    height: 330px;
-    width: 250px;
+    height: 43vh;
+    width: 35vh;
     border-radius: 30px;
     --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
     --m:
@@ -157,7 +154,7 @@ h4{
     /*filter: grayscale(0);*/
   }
 .about-text{
-    width: 550px;
+    width: 100vh;
 }
 .main{
     width: 1130px;
@@ -205,14 +202,14 @@ h4{
 /*Project*/ 
 .project{
     background: whitesmoke;
-    width: 219vh;
+    width: 100%;
     padding: 50px 0px;  
     position: relative; 
    
 }
 .title h2{
     color: black;
-    font-size: 65px;
+    font-size: 55px;
     width:auto;
     margin: auto;
     text-align: center;
@@ -225,8 +222,8 @@ h4{
     min-height: 400px;
 }
 .card{
-    height: 545px;
-    width: 435px;
+    height: 80vh;;
+    width: 60vh;
     padding: 20px 35px;
     background: gray;
     border-radius: 10px;
@@ -237,8 +234,8 @@ h4{
     
 }
 .card img{
-    height: 400px;
-    width: 250px;
+    height: 50vh;
+    width: 35vh;
     border-radius: 10px;
     display: inline-block;
     background-size: contain;
@@ -267,7 +264,7 @@ h5{
 }
 /*Contact*/
 #contact{
-    width: 219vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -323,7 +320,7 @@ h5{
     background-color: black;
     padding: 15px;
     height: 30%;
-    width: 219vh;
+    width: 100%;
 }
 .footer h5{
     background-color: #000;
